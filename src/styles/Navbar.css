@@ -1,0 +1,154 @@
+
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+}
+
+.navbar-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.logo{
+    text-decoration:none;
+    font-size:32px;
+    font-weight:700;
+    color:#111827;
+    letter-spacing:-0.5px;
+    display:flex;
+    align-items:center;
+}
+
+.logo-text{
+    color:#111827;
+    background:#ffffff;
+    padding:2px 6px;
+    border-radius:6px;
+    position:relative;
+    z-index:2;
+}
+
+.logo-box{
+    width:42px;
+    height:42px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:700;
+}
+.logo-text{
+    color:#111827;
+}
+.logo-blue{
+    color:#2563eb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.25s;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-buttons .btn {
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-buttons .btn-light {
+    background: #ffffff;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.nav-buttons .btn-light:hover {
+    background: #f3f4f6;
+}
+
+.nav-buttons .btn-primary {
+    background: #2563eb;
+    border: none;
+}
+
+.nav-buttons .btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 992px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-container {
+        height: 72px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .logo-box {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+}
