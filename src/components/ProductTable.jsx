@@ -76,13 +76,13 @@ function ProductTable({ products, handleDelete }) {
                       onClick={() => handleDelete(product.id)}
                     >
                       Delete
-                    </button>{" "}
-                    {/* <button
+                    </button>
+                    <button
                       className="btn btn-success btn-sm ms-2"
                       onClick={() => dispatch(addToCart(product))}
                     >
                       Add to Cart
-                    </button> */}
+                    </button>
                   </td>
                 </tr>
               ))}

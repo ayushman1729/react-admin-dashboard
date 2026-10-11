@@ -16,7 +16,7 @@ function AdminLayout() {
           <Outlet />
         </div>
 
-        
+        <Footer />
       </div>
 
       <ScrollToTop />

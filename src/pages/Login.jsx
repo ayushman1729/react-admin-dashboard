@@ -24,6 +24,19 @@ const dispatch = useDispatch();
     });
   };
 
+  const handleDemoLogin = () => {
+    const demoUser = {
+      firstName: "Ayush",
+      lastName: "Admin",
+      email: "admin@devhub.com",
+      role: "Super Admin",
+    };
+    localStorage.setItem("user", JSON.stringify(demoUser));
+    localStorage.setItem("isLoggedIn", "true");
+    dispatch(login(demoUser));
+    navigate("/dashboard");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -115,25 +128,18 @@ const dispatch = useDispatch();
                         </div>
                         <button
                           type="submit"
-                          className="btn btn-primary btn-user btn-block"
+                          className="btn btn-primary btn-user btn-block font-weight-bold"
                         >
                           Login
                         </button>
                         <hr />
-                        <a
-                          href="index.html"
-                          className="btn btn-google btn-user btn-block"
+                        <button
+                          type="button"
+                          className="btn btn-success btn-user btn-block font-weight-bold shadow-sm"
+                          onClick={handleDemoLogin}
                         >
-                          <i className="fab fa-google fa-fw"></i> Login with
-                          Google
-                        </a>
-                        <a
-                          href="index.html"
-                          className="btn btn-facebook btn-user btn-block"
-                        >
-                          <i className="fab fa-facebook-f fa-fw"></i> Login with
-                          Facebook
-                        </a>
+                          <i className="fas fa-bolt mr-2"></i> 1-Click Demo Admin Login
+                        </button>
                       </form>
                       <hr />
                       <div className="text-center">

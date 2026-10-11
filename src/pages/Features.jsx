@@ -8,7 +8,6 @@ import {
   FaClipboardList,
   FaUtensils,
   FaComments,
-  FaArrowRight,
 } from "react-icons/fa";
 
 const features = [

@@ -7,7 +7,6 @@ function AddProduct() {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [brand, setBrand] = useState("");
-  const [image, setImage] = useState("");
   const [preview, setPreview] = useState("");
   const [category, setCategory] = useState("");
   const [stock, setStock] = useState("");
@@ -53,7 +52,6 @@ function AddProduct() {
     setBrand("");
     setCategory("");
     setStock("");
-    setImage("");
     setPreview("");
   };
 
@@ -61,8 +59,6 @@ function AddProduct() {
     const file = e.target.files[0];
 
     if (!file) return;
-
-    setImage(file);
 
     const imageURL = URL.createObjectURL(file);
     setPreview(imageURL);

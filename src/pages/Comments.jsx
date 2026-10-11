@@ -5,10 +5,6 @@ const Comments = () => {
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchComments();
-  }, []);
-
   const fetchComments = async () => {
     try {
       const res = await axios.get("https://dummyjson.com/comments");
@@ -19,6 +15,10 @@ const Comments = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchComments();
+  }, []);
 
   if (loading) {
     return <h4 className="text-center mt-5">Loading...</h4>;

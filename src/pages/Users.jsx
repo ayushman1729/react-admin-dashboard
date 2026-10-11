@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import UserTable from "../components/UserTable";
-import { addUsers } from "../api/userApi";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 function Users() {
-  const navigate = useNavigate();0
+  const navigate = useNavigate();
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState("");
 

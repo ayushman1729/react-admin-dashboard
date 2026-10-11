@@ -24,6 +24,7 @@ import MyCart from "./pages/MyCart";
 import Dashboard from "./pages/Dashboard";
 import EditUser from "./pages/EditUser";
 import Comments from "./pages/Comments";
+import Error404 from "./pages/Error404";
 function App() {
   return (
     <Routes>
@@ -57,6 +58,7 @@ function App() {
 
       <Route path="/register" element={<Register />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="*" element={<Error404 />} />
     </Routes>
   );
 }
