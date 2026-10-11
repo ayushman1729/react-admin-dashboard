@@ -60,7 +60,7 @@ function TechStack() {
             <h2>Built With Modern Technologies</h2>
 
             <p>
-              DEVHUB is powered by modern frontend technologies used in
+              PulseAdmin is powered by modern frontend technologies used in
               real-world React applications.
             </p>
           </div>

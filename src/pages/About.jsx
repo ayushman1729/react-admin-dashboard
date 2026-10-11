@@ -20,8 +20,8 @@ function About() {
           </h2>
 
           <p>
-            DEVHUB is a modern React Admin Dashboard built for learning
-            and real-world practice. It demonstrates authentication,
+            PulseAdmin is an enterprise React Admin & Commerce Platform built for
+            modern e-commerce management and real-world frontend practice. It demonstrates authentication,
             routing, CRUD operations, API integration, responsive UI,
             search, pagination, and reusable components using
             industry-standard technologies.

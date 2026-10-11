@@ -28,7 +28,7 @@ const dispatch = useDispatch();
     const demoUser = {
       firstName: "Ayush",
       lastName: "Admin",
-      email: "admin@devhub.com",
+      email: "admin@pulseadmin.dev",
       role: "Super Admin",
     };
     localStorage.setItem("user", JSON.stringify(demoUser));
@@ -47,8 +47,7 @@ const dispatch = useDispatch();
       return;
     }
     if (!savedUser) {
-      setError("No account found. Please register first.");
-      // navigate("/register");
+      setError("No account found. Please register first or use 1-Click Demo Login.");
       return;
     }
 
@@ -57,8 +56,8 @@ const dispatch = useDispatch();
       formData.password === savedUser.password
     ) {
       setError("");
-     dispatch(login(savedUser));
-     localStorage.setItem("isLoggedIn", "true");
+      dispatch(login(savedUser));
+      localStorage.setItem("isLoggedIn", "true");
 
       navigate("/dashboard");
     } else {
@@ -67,7 +66,7 @@ const dispatch = useDispatch();
   };
 
   return (
-    <div className="bg-gradient-primary min-vh-100">
+    <div style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #881337 100%)", minHeight: "100vh", display: "flex", alignItems: "center" }}>
       <div className="container">
         {/* 
         <!-- Outer Row --> */}

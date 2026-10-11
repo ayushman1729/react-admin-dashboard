@@ -1,4 +1,4 @@
-# 🚀 DevHub — React Admin Dashboard
+# 🚀 PulseAdmin — Enterprise React Admin & Commerce Platform
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-success?style=for-the-badge&logo=vercel)](https://react-admin-dashboard-iota-rosy.vercel.app)
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)

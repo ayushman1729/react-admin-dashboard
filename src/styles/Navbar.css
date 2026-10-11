@@ -1,154 +1,131 @@
-
 .navbar-custom {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  z-index: 1000;
 }
 
 .navbar-container {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* =========================
-   Logo
-========================= */
-
-.logo{
-    text-decoration:none;
-    font-size:32px;
-    font-weight:700;
-    color:#111827;
-    letter-spacing:-0.5px;
-    display:flex;
-    align-items:center;
+/* Brand Logo (Zero Overlaps, Clean & Bold) */
+.brand-logo {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.logo-text{
-    color:#111827;
-    background:#ffffff;
-    padding:2px 6px;
-    border-radius:6px;
-    position:relative;
-    z-index:2;
+.brand-icon-box {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+  flex-shrink: 0;
 }
 
-.logo-box{
-    width:42px;
-    height:42px;
-    background:#2563eb;
-    color:#fff;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    font-weight:700;
+.brand-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
-.logo-text{
-    color:#111827;
-}
-.logo-blue{
-    color:#2563eb;
+
+.brand-highlight {
+  color: #e11d48;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 38px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #374151;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.25s;
-    position: relative;
+  text-decoration: none;
+  color: #475569;
+  font-size: 14.5px;
+  font-weight: 600;
+  transition: color 0.15s ease;
+  position: relative;
 }
 
 .nav-links a:hover {
-    color: #2563eb;
+  color: #e11d48;
 }
 
 .nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: #2563eb;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #e11d48;
+  transition: width 0.2s ease;
 }
 
 .nav-links a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-buttons {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .nav-buttons .btn {
-    padding: 10px 22px;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: 0.3s;
+  padding: 8px 18px !important;
+  border-radius: var(--radius-md) !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
 }
 
-.nav-buttons .btn-light {
-    background: #ffffff;
-    color: #111827;
-    border: 1px solid #d1d5db;
+.nav-buttons .btn-outline-primary {
+  color: #e11d48 !important;
+  border-color: #e11d48 !important;
+  background: transparent !important;
 }
 
-.nav-buttons .btn-light:hover {
-    background: #f3f4f6;
+.nav-buttons .btn-outline-primary:hover {
+  background: #e11d48 !important;
+  color: #ffffff !important;
 }
 
 .nav-buttons .btn-primary {
-    background: #2563eb;
-    border: none;
+  background: #e11d48 !important;
+  border-color: #e11d48 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(225, 29, 72, 0.25) !important;
 }
 
 .nav-buttons .btn-primary:hover {
-    background: #1d4ed8;
+  background: #be123c !important;
+  border-color: #be123c !important;
+  box-shadow: 0 4px 10px rgba(225, 29, 72, 0.35) !important;
 }
 
-/* =========================
-   Responsive
-========================= */
-
 @media (max-width: 992px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .navbar-container {
-        height: 72px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    .logo-box {
-        width: 42px;
-        height: 42px;
-        font-size: 22px;
-    }
-
+  .nav-links {
+    display: none;
+  }
 }

@@ -16,12 +16,12 @@ function Footer() {
         <div className="footer-brand">
 
           <h2>
-            DEV<span>HUB</span>
+            Pulse<span>Admin</span>
           </h2>
 
           <p>
-            A modern React Admin Dashboard built for learning,
-            portfolio projects and real-world practice.
+            An enterprise React Admin & Commerce Platform built with
+            React 19, Redux Toolkit, and live REST API services.
           </p>
 
         </div>
@@ -69,7 +69,7 @@ function Footer() {
       <div className="footer-bottom">
 
         <p>
-          © 2026 DEVHUB • Built with <FaReact /> React
+          © 2026 PulseAdmin • Built with <FaReact /> React 19
         </p>
 
       </div>
